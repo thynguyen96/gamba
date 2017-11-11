@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Demo</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- FONT CSS-->
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,700">
+  <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-awesome/css/font-awesome.css">
+  <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-oganic/flaticon.css">
+  <!-- LIBRARY CSS-->
+  <link type="text/css" rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="assets/libs/bootstrap-timepicker/jquery.timepicker.css">
+  <link type="text/css" rel="stylesheet" href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+  <link type="text/css" rel="stylesheet" href="assets/libs/animate/animate.css">
+  <link type="text/css" rel="stylesheet" href="assets/libs/slick-slider/slick.css">
+  <link type="text/css" rel="stylesheet" href="assets/libs/slick-slider/slick-theme.css">
+  <link type="text/css" rel="stylesheet" href="assets/libs/custom-scroll/jquery.mCustomScrollbar.min.css">
+  <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox.css">
+  <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-buttons.css">
+  <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-thumbs.css">
+  <!-- STYLE CSS-->
+  <link type="text/css" rel="stylesheet" href="assets/css/layout.css">
+  <link type="text/css" rel="stylesheet" href="assets/css/components.css">
+  <link type="text/css" rel="stylesheet" href="assets/css/responsive.css">
+  <link type="text/css" rel="stylesheet" href="assets/libs/selectbox/css/jquery.selectbox.css">
+  <link type="text/css" rel="stylesheet" href="#" id="color-skins">
+  <!-- JS change color-->
+  <script src="assets/libs/jquery/jquery-2.2.4.min.js"></script>
+  <script src="assets/libs/cookie/js.cookie.js"></script>
+  <script>
+    if ((Cookies.get('color-skin') != undefined) && (Cookies.get('color-skin') != 'color-1')) {
+      $('#color-skins').attr('href', 'assets/css/custom-color/' + Cookies.get('color-skin') + '.css');
+    }
+    else if ((Cookies.get('color-skin') == undefined) || (Cookies.get('color-skin') == 'color-1')) {
+      $('#color-skins').attr('href', 'assets/css/custom-color/custom-color-1.css');
+    }
+  </script>
+</head>
+
+<body>
+  <app-root></app-root>
+
+  <!-- LIBRARY JS-->
+  <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/libs/bootstrap-timepicker/jquery.timepicker.min.js"></script>
+  <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <script src="assets/libs/smooth-scroll/jquery-smoothscroll.min.js"></script>
+  <script src="assets/libs/mouse-direction-aware/dist/jquery.directional-hover.min.js"></script>
+  <script src="assets/libs/wow-js/wow.min.js"></script>
+  <script src="assets/libs/count-to/numscroller.js"></script>
+  <script src="assets/libs/slick-slider/slick.min.js"></script>
+  <script src="assets/libs/isotope/isotope.pkgd.min.js"></script>
+  <script src="assets/libs/custom-scroll/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="assets/libs/fancybox/js/jquery.fancybox.min.js"></script>
+  <script src="assets/libs/fancybox/js/jquery.fancybox-buttons.min.js"></script>
+  <script src="assets/libs/fancybox/js/jquery.fancybox-thumbs.min.js"></script>
+  <!-- MAIN JS-->
+  <script src="assets/js/main.js">
+  </script>
+  <!-- LOADING SCRIPTS FOR PAGE-->
+  <script src="assets/libs/parallax/jquery.parallax-scroll.min.js"></script>
+  <script src="assets/libs/mail/jqBootstrapValidation.min.js"></script>
+  <script src="assets/libs/selectbox/js/jquery.selectbox-0.2.min.js"></script>
+  
+  <!-- <script src="assets/libs/mail/contact_me.min.js"></script> -->
+   <!-- LOADING SCRIPTS FOR PAGE-->
+</body>
+
+</html>
