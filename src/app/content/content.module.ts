@@ -17,6 +17,10 @@ import { TestComponent } from './test/test.component';
 import { ShopDetailComponent } from './shop-detail/shop-detail.component';
 import { MyAccountComponent } from './my-account/my-account.component';
 import { MyAccountDetailComponent } from './my-account-detail/my-account-detail.component';
+import { AboutComponent } from './about/about.component';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { CheckOutComponent } from './check-out/check-out.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 @NgModule({
   imports: [
@@ -38,7 +42,11 @@ import { MyAccountDetailComponent } from './my-account-detail/my-account-detail.
     TestComponent,
     ShopDetailComponent,
     MyAccountComponent,
-    MyAccountDetailComponent
+    MyAccountDetailComponent,
+    AboutComponent,
+    BlogDetailComponent,
+    CheckOutComponent,
+    ShoppingCartComponent
   ],
   providers: [GuardContentGuard],
   exports : [ShopComponent]

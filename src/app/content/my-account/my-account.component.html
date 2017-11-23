@@ -1,3 +1,83 @@
-<p>
-  my-account works!
-</p>
+<!-- MAIN CONTENT-->
+<div class="main-contents">
+    <!-- Breadcrumb-->
+    <section class="banner check-out">
+        <div class="container">
+            <div class="morepage-banner">
+                <h2 class="title">My Account</h2>
+                <ol class="breadcrumb">
+                    <li><a href="index.html" class="link">Home</a></li>
+                    <li class="active"><a href="#" class="link">My Account</a></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section class="info-form padding-top-100 padding-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="main-titles">
+                        <h1 class="title">My Account</h1></div>
+                </div>
+                <div class="my-account-tab">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <ul role="tablist" class="nav nav-tabs">
+                            <li role="presentation" class="active"><a href="#tab-login" aria-controls="tab-login" role="tab" data-toggle="tab">Login</a></li>
+                            <li role="presentation"><a href="#tab-register" aria-controls="tab-register" role="tab" data-toggle="tab">Register</a></li>
+                        </ul>
+                    </div>
+                    <!-- Tab panes-->
+                    <div class="col-md-9 col-sm-8 col-xs-12">
+                        <div class="tab-content">
+                            <div id="tab-login" role="tabpanel" class="tab-pane active">
+                                <h2 class="title">Login</h2>
+                                <form id="login-form" novalidate="novalidate" class="account-form login-form">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group"><label class="form-label">USER NAME OR EMAIL ADRESS<span class="highlight">*</span></label><input id="user-name" type="text" required="required" data-validation-required-message="Please enter your user name."
+                                                    class="form-control">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group"><label class="form-label">PASSWORD <span class="highlight">*</span></label><input id="password" type="password" required="required" data-validation-required-message="Please enter your password."
+                                                    class="form-control">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div id="submit" class="wrapper-btn"><button type="submit" class="btn btn-maincolor">Login</button><label class="rememberme"><input id="rememberme" name="rememberme" type="checkbox" value="forever"><span>Remember me</span><span class="label-checkbox"></span></label></div>
+                                        </div>
+                                        <div class="col-xs-12"><a href="#" class="lost_password">Lost your password?</a></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="tab-register" role="tabpanel" class="tab-pane">
+                                <h2 class="title">Register</h2>
+                                <form id="register-form" novalidate="novalidate" class="account-form register-form">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group"><label class="form-label">EMAIL ADRESS<span class="highlight">*</span></label><input id="user-name" type="text" required="required" data-validation-required-message="Please enter your user name."
+                                                    class="form-control">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group"><label class="form-label">PASSWORD <span class="highlight">*</span></label><input id="password" type="password" required="required" data-validation-required-message="Please enter your password."
+                                                    class="form-control">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div id="submit" class="wrapper-btn"><button type="submit" class="btn btn-maincolor">Register</button></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
